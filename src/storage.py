@@ -127,7 +127,7 @@ class MovieStorage:
         # Loop through columns
         for column in columns:
             if column not in MOVIE_COLUMNS:
-                logger.error(f'Unsupported columns: {column}')
+                logger.error(f'Unsupported column: {column}')
                 raise ValueError(f'Unsupported column: {column}')
 
         # Join columns
